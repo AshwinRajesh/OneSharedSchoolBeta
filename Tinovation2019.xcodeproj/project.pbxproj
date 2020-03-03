@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B37F7FD240D82D200BC69A8 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37F7FC240D82D200BC69A8 /* DonateViewController.swift */; };
+		8B37F7FF240DEB3F00BC69A8 /* DonateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37F7FE240DEB3F00BC69A8 /* DonateTableViewCell.swift */; };
+		8B37F803240E112800BC69A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B37F802240E112800BC69A8 /* GoogleService-Info.plist */; };
+		8B3A5AC72400F10D00BEC051 /* SchoolProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A5AC62400F10D00BEC051 /* SchoolProfileViewController.swift */; };
+		8B3A5AC9240105CC00BEC051 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A5AC8240105CC00BEC051 /* LoginViewController.swift */; };
+		8B3A5ACB240108D100BEC051 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A5ACA240108D100BEC051 /* SignupViewController.swift */; };
+		8B41F8732371272D00F383DB /* MessagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B41F8722371272D00F383DB /* MessagingViewController.swift */; };
+		8B41F87D2371287600F383DB /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B41F87C2371287600F383DB /* UserCollectionViewCell.swift */; };
+		8B41F87F2371288E00F383DB /* OtherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B41F87E2371288E00F383DB /* OtherCollectionViewCell.swift */; };
+		8B49703423A0A1A300F5C6FD /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49703323A0A1A300F5C6FD /* ContactsViewController.swift */; };
+		8B49703623A0A23C00F5C6FD /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49703523A0A23C00F5C6FD /* ContactTableViewCell.swift */; };
+		8BB96A6323FE55E80025C255 /* SchoolMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96A6223FE55E70025C255 /* SchoolMapViewController.swift */; };
+		8BB96A6523FE65490025C255 /* school.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BB96A6423FE65490025C255 /* school.jpg */; };
+		8BE960CD236DF52A00D3D254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE960CC236DF52A00D3D254 /* AppDelegate.swift */; };
+		8BE960CF236DF52A00D3D254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE960CE236DF52A00D3D254 /* ViewController.swift */; };
+		8BE960D2236DF52A00D3D254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE960D0236DF52A00D3D254 /* Main.storyboard */; };
+		8BE960D4236DF53100D3D254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BE960D3236DF53100D3D254 /* Assets.xcassets */; };
+		8BE960D7236DF53100D3D254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BE960D5236DF53100D3D254 /* LaunchScreen.storyboard */; };
+		8BE960E2236DF53100D3D254 /* Tinovation2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE960E1236DF53100D3D254 /* Tinovation2019Tests.swift */; };
+		8BE960ED236DF53100D3D254 /* Tinovation2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE960EC236DF53100D3D254 /* Tinovation2019UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BE960DE236DF53100D3D254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BE960C1236DF52A00D3D254 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE960C8236DF52A00D3D254;
+			remoteInfo = Tinovation2019;
+		};
+		8BE960E9236DF53100D3D254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BE960C1236DF52A00D3D254 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BE960C8236DF52A00D3D254;
+			remoteInfo = Tinovation2019;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B37F7FC240D82D200BC69A8 /* DonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateViewController.swift; sourceTree = "<group>"; };
+		8B37F7FE240DEB3F00BC69A8 /* DonateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateTableViewCell.swift; sourceTree = "<group>"; };
+		8B37F802240E112800BC69A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8B3A5AC62400F10D00BEC051 /* SchoolProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolProfileViewController.swift; sourceTree = "<group>"; };
+		8B3A5AC8240105CC00BEC051 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8B3A5ACA240108D100BEC051 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		8B41F8722371272D00F383DB /* MessagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingViewController.swift; sourceTree = "<group>"; };
+		8B41F87C2371287600F383DB /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCollectionViewCell.swift; path = /Users/ashwinr/Downloads/Tinovation2019/Tinovation2019/UserCollectionViewCell.swift; sourceTree = "<absolute>"; };
+		8B41F87E2371288E00F383DB /* OtherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OtherCollectionViewCell.swift; path = /Users/ashwinr/Downloads/Tinovation2019/Tinovation2019/OtherCollectionViewCell.swift; sourceTree = "<absolute>"; };
+		8B49703323A0A1A300F5C6FD /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactsViewController.swift; path = /Users/ashwinr/Downloads/Tinovation2019/Tinovation2019/ContactsViewController.swift; sourceTree = "<absolute>"; };
+		8B49703523A0A23C00F5C6FD /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		8BB96A6223FE55E70025C255 /* SchoolMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMapViewController.swift; sourceTree = "<group>"; };
+		8BB96A6423FE65490025C255 /* school.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = school.jpg; sourceTree = "<group>"; };
+		8BE960C9236DF52A00D3D254 /* Tinovation2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinovation2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE960CC236DF52A00D3D254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BE960CE236DF52A00D3D254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BE960D1236DF52A00D3D254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BE960D3236DF53100D3D254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BE960D6236DF53100D3D254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BE960D8236DF53100D3D254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE960DD236DF53100D3D254 /* Tinovation2019Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tinovation2019Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE960E1236DF53100D3D254 /* Tinovation2019Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinovation2019Tests.swift; sourceTree = "<group>"; };
+		8BE960E3236DF53100D3D254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BE960E8236DF53100D3D254 /* Tinovation2019UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tinovation2019UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE960EC236DF53100D3D254 /* Tinovation2019UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinovation2019UITests.swift; sourceTree = "<group>"; };
+		8BE960EE236DF53100D3D254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BE960C6236DF52A00D3D254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE960DA236DF53100D3D254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE960E5236DF53100D3D254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BE960C0236DF52A00D3D254 = {
+			isa = PBXGroup;
+			children = (
+				8BE960CB236DF52A00D3D254 /* Tinovation2019 */,
+				8BE960E0236DF53100D3D254 /* Tinovation2019Tests */,
+				8BE960EB236DF53100D3D254 /* Tinovation2019UITests */,
+				8BE960CA236DF52A00D3D254 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BE960CA236DF52A00D3D254 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BE960C9236DF52A00D3D254 /* Tinovation2019.app */,
+				8BE960DD236DF53100D3D254 /* Tinovation2019Tests.xctest */,
+				8BE960E8236DF53100D3D254 /* Tinovation2019UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BE960CB236DF52A00D3D254 /* Tinovation2019 */ = {
+			isa = PBXGroup;
+			children = (
+				8B37F7FC240D82D200BC69A8 /* DonateViewController.swift */,
+				8B49703323A0A1A300F5C6FD /* ContactsViewController.swift */,
+				8B49703523A0A23C00F5C6FD /* ContactTableViewCell.swift */,
+				8BE960CC236DF52A00D3D254 /* AppDelegate.swift */,
+				8BE960CE236DF52A00D3D254 /* ViewController.swift */,
+				8BB96A6223FE55E70025C255 /* SchoolMapViewController.swift */,
+				8B3A5AC8240105CC00BEC051 /* LoginViewController.swift */,
+				8B3A5ACA240108D100BEC051 /* SignupViewController.swift */,
+				8B41F87C2371287600F383DB /* UserCollectionViewCell.swift */,
+				8B41F8722371272D00F383DB /* MessagingViewController.swift */,
+				8B41F87E2371288E00F383DB /* OtherCollectionViewCell.swift */,
+				8B3A5AC62400F10D00BEC051 /* SchoolProfileViewController.swift */,
+				8BE960D0236DF52A00D3D254 /* Main.storyboard */,
+				8B37F7FE240DEB3F00BC69A8 /* DonateTableViewCell.swift */,
+				8B37F802240E112800BC69A8 /* GoogleService-Info.plist */,
+				8BE960D3236DF53100D3D254 /* Assets.xcassets */,
+				8BB96A6423FE65490025C255 /* school.jpg */,
+				8BE960D5236DF53100D3D254 /* LaunchScreen.storyboard */,
+				8BE960D8236DF53100D3D254 /* Info.plist */,
+			);
+			path = Tinovation2019;
+			sourceTree = "<group>";
+		};
+		8BE960E0236DF53100D3D254 /* Tinovation2019Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8BE960E1236DF53100D3D254 /* Tinovation2019Tests.swift */,
+				8BE960E3236DF53100D3D254 /* Info.plist */,
+			);
+			path = Tinovation2019Tests;
+			sourceTree = "<group>";
+		};
+		8BE960EB236DF53100D3D254 /* Tinovation2019UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8BE960EC236DF53100D3D254 /* Tinovation2019UITests.swift */,
+				8BE960EE236DF53100D3D254 /* Info.plist */,
+			);
+			path = Tinovation2019UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BE960C8236DF52A00D3D254 /* Tinovation2019 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE960F1236DF53100D3D254 /* Build configuration list for PBXNativeTarget "Tinovation2019" */;
+			buildPhases = (
+				8BE960C5236DF52A00D3D254 /* Sources */,
+				8BE960C6236DF52A00D3D254 /* Frameworks */,
+				8BE960C7236DF52A00D3D254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tinovation2019;
+			productName = Tinovation2019;
+			productReference = 8BE960C9236DF52A00D3D254 /* Tinovation2019.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BE960DC236DF53100D3D254 /* Tinovation2019Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE960F4236DF53100D3D254 /* Build configuration list for PBXNativeTarget "Tinovation2019Tests" */;
+			buildPhases = (
+				8BE960D9236DF53100D3D254 /* Sources */,
+				8BE960DA236DF53100D3D254 /* Frameworks */,
+				8BE960DB236DF53100D3D254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BE960DF236DF53100D3D254 /* PBXTargetDependency */,
+			);
+			name = Tinovation2019Tests;
+			productName = Tinovation2019Tests;
+			productReference = 8BE960DD236DF53100D3D254 /* Tinovation2019Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8BE960E7236DF53100D3D254 /* Tinovation2019UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BE960F7236DF53100D3D254 /* Build configuration list for PBXNativeTarget "Tinovation2019UITests" */;
+			buildPhases = (
+				8BE960E4236DF53100D3D254 /* Sources */,
+				8BE960E5236DF53100D3D254 /* Frameworks */,
+				8BE960E6236DF53100D3D254 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BE960EA236DF53100D3D254 /* PBXTargetDependency */,
+			);
+			name = Tinovation2019UITests;
+			productName = Tinovation2019UITests;
+			productReference = 8BE960E8236DF53100D3D254 /* Tinovation2019UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BE960C1236DF52A00D3D254 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ashwin Rajesh";
+				TargetAttributes = {
+					8BE960C8236DF52A00D3D254 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8BE960DC236DF53100D3D254 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8BE960C8236DF52A00D3D254;
+					};
+					8BE960E7236DF53100D3D254 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8BE960C8236DF52A00D3D254;
+					};
+				};
+			};
+			buildConfigurationList = 8BE960C4236DF52A00D3D254 /* Build configuration list for PBXProject "Tinovation2019" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BE960C0236DF52A00D3D254;
+			productRefGroup = 8BE960CA236DF52A00D3D254 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BE960C8236DF52A00D3D254 /* Tinovation2019 */,
+				8BE960DC236DF53100D3D254 /* Tinovation2019Tests */,
+				8BE960E7236DF53100D3D254 /* Tinovation2019UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BE960C7236DF52A00D3D254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE960D7236DF53100D3D254 /* LaunchScreen.storyboard in Resources */,
+				8BB96A6523FE65490025C255 /* school.jpg in Resources */,
+				8B37F803240E112800BC69A8 /* GoogleService-Info.plist in Resources */,
+				8BE960D4236DF53100D3D254 /* Assets.xcassets in Resources */,
+				8BE960D2236DF52A00D3D254 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE960DB236DF53100D3D254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE960E6236DF53100D3D254 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BE960C5236DF52A00D3D254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE960CF236DF52A00D3D254 /* ViewController.swift in Sources */,
+				8B41F87D2371287600F383DB /* UserCollectionViewCell.swift in Sources */,
+				8B3A5ACB240108D100BEC051 /* SignupViewController.swift in Sources */,
+				8B37F7FF240DEB3F00BC69A8 /* DonateTableViewCell.swift in Sources */,
+				8B3A5AC72400F10D00BEC051 /* SchoolProfileViewController.swift in Sources */,
+				8B41F87F2371288E00F383DB /* OtherCollectionViewCell.swift in Sources */,
+				8BE960CD236DF52A00D3D254 /* AppDelegate.swift in Sources */,
+				8B49703623A0A23C00F5C6FD /* ContactTableViewCell.swift in Sources */,
+				8B37F7FD240D82D200BC69A8 /* DonateViewController.swift in Sources */,
+				8BB96A6323FE55E80025C255 /* SchoolMapViewController.swift in Sources */,
+				8B41F8732371272D00F383DB /* MessagingViewController.swift in Sources */,
+				8B3A5AC9240105CC00BEC051 /* LoginViewController.swift in Sources */,
+				8B49703423A0A1A300F5C6FD /* ContactsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE960D9236DF53100D3D254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE960E2236DF53100D3D254 /* Tinovation2019Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE960E4236DF53100D3D254 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BE960ED236DF53100D3D254 /* Tinovation2019UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BE960DF236DF53100D3D254 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BE960C8236DF52A00D3D254 /* Tinovation2019 */;
+			targetProxy = 8BE960DE236DF53100D3D254 /* PBXContainerItemProxy */;
+		};
+		8BE960EA236DF53100D3D254 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BE960C8236DF52A00D3D254 /* Tinovation2019 */;
+			targetProxy = 8BE960E9236DF53100D3D254 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8BE960D0236DF52A00D3D254 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BE960D1236DF52A00D3D254 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8BE960D5236DF53100D3D254 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8BE960D6236DF53100D3D254 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8BE960EF236DF53100D3D254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BE960F0236DF53100D3D254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BE960F2236DF53100D3D254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tinovation2019/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinovationiOS.Tinovation2019;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BE960F3236DF53100D3D254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tinovation2019/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TinovationiOS.Tinovation2019;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BE960F5236DF53100D3D254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tinovation2019Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ashwinr.Tinovation2019Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tinovation2019.app/Tinovation2019";
+			};
+			name = Debug;
+		};
+		8BE960F6236DF53100D3D254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tinovation2019Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ashwinr.Tinovation2019Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tinovation2019.app/Tinovation2019";
+			};
+			name = Release;
+		};
+		8BE960F8236DF53100D3D254 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tinovation2019UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ashwinr.Tinovation2019UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tinovation2019;
+			};
+			name = Debug;
+		};
+		8BE960F9236DF53100D3D254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tinovation2019UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ashwinr.Tinovation2019UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tinovation2019;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BE960C4236DF52A00D3D254 /* Build configuration list for PBXProject "Tinovation2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE960EF236DF53100D3D254 /* Debug */,
+				8BE960F0236DF53100D3D254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE960F1236DF53100D3D254 /* Build configuration list for PBXNativeTarget "Tinovation2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE960F2236DF53100D3D254 /* Debug */,
+				8BE960F3236DF53100D3D254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE960F4236DF53100D3D254 /* Build configuration list for PBXNativeTarget "Tinovation2019Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE960F5236DF53100D3D254 /* Debug */,
+				8BE960F6236DF53100D3D254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE960F7236DF53100D3D254 /* Build configuration list for PBXNativeTarget "Tinovation2019UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE960F8236DF53100D3D254 /* Debug */,
+				8BE960F9236DF53100D3D254 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BE960C1236DF52A00D3D254 /* Project object */;
+}
