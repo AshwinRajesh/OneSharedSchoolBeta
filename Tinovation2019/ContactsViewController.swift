@@ -36,7 +36,7 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
         contactsTable.dataSource = self
         contactsTable.delegate = self
         
-        language = .en
+        //language = .en
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

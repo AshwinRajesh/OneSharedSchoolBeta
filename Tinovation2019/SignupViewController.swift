@@ -14,6 +14,10 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    @IBOutlet weak var name: UITextField!
+    
+    var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +33,11 @@ class SignupViewController: UIViewController {
     }
     
     @IBAction func donorSignup(_ sender: UIButton) {
+        
+        ref = Database.database().reference()
+        
+        ref.child("Users").child(name.text!).setValue(["username": name.text!])
+        
         Auth.auth().createUser(withEmail: email.text!, password: password.text!, completion: {user, error in
             if (error == nil) {
                 self.performSegue(withIdentifier: "home", sender: self)

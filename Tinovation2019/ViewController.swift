@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-var language: TranslateLanguage = .ja
+//var language: TranslateLanguage = .ja
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
@@ -33,7 +33,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     var languages = ["English", "Spanish", "French", "Hindi", "Mandarin", "Japanese"]
     
-    var langAbv: [TranslateLanguage] = [.en, .es, .fr, .hi, .cs, .ja]
+    //var langAbv: [TranslateLanguage] = [.en, .es, .fr, .hi, .cs, .ja]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBAction func translate(_ sender: UIButton) {
         
-        language = langAbv[languagePicker.selectedRow(inComponent: 0)]
+        //language = langAbv[languagePicker.selectedRow(inComponent: 0)]
         
         
     }
