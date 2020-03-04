@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RCE-Lh-vhM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wYD-qw-nIa">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -405,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uc-ua-lfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-936.23188405797111" y="1395.5357142857142"/>
+            <point key="canvasLocation" x="-1168" y="1387"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yXm-8M-skP">
@@ -421,13 +421,15 @@
                         <segue destination="3Zt-Dm-cok" kind="relationship" relationship="viewControllers" id="UCo-L1-4Gh"/>
                         <segue destination="Sgc-bU-OWb" kind="relationship" relationship="viewControllers" id="cDr-7h-12K"/>
                         <segue destination="ML2-ex-dn1" kind="relationship" relationship="viewControllers" id="OnY-RH-o7n"/>
+                        <segue destination="RCE-Lh-vhM" kind="relationship" relationship="viewControllers" id="Tfh-PC-zB0"/>
+                        <segue destination="HJ2-h4-cbp" kind="relationship" relationship="viewControllers" id="NuS-gF-Z1f"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAb-S2-H6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1806" y="1477"/>
+            <point key="canvasLocation" x="-2303" y="1821"/>
         </scene>
-        <!--School Map View Controller-->
+        <!--Schools-->
         <scene sceneID="0I5-ZW-eGW">
             <objects>
                 <viewController id="HJ2-h4-cbp" customClass="SchoolMapViewController" customModule="Tinovation2019" customModuleProvider="target" sceneMemberID="viewController">
@@ -450,6 +452,7 @@
                         <color key="backgroundColor" red="1" green="0.72930877189999999" blue="0.30893916189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Eax-Mm-b4X"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Schools" id="61N-fy-A6I"/>
                     <connections>
                         <outlet property="map" destination="1lC-n7-byE" id="5xA-tD-NOM"/>
                         <segue destination="v0n-dF-xeN" kind="show" identifier="schoolProfile" id="nb6-gY-Cpo"/>
@@ -531,7 +534,7 @@
             </objects>
             <point key="canvasLocation" x="950.72463768115949" y="843.75"/>
         </scene>
-        <!--User Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="vky-7h-INK">
             <objects>
                 <viewController id="RCE-Lh-vhM" customClass="UserProfileViewController" customModule="Tinovation2019" customModuleProvider="target" sceneMemberID="viewController">
@@ -546,18 +549,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1VH-6z-Efx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nophotoselected.png" translatesAutoresizingMaskIntoConstraints="NO" id="1VH-6z-Efx">
                                 <rect key="frame" x="120" y="81" width="176" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money Donated:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qD0-MT-9AS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money Donated: $300" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qD0-MT-9AS">
                                 <rect key="frame" x="48" y="363" width="318" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schools Helped:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hv-Kh-arb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Schools Helped: 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hv-Kh-arb">
                                 <rect key="frame" x="48" y="509" width="318" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
@@ -581,7 +584,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75D-VD-ajZ">
-                                <rect key="frame" x="141" y="753" width="133" height="89"/>
+                                <rect key="frame" x="142" y="713" width="133" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="29"/>
                                 <state key="normal" title="Settings">
@@ -595,6 +598,7 @@
                         <color key="backgroundColor" red="1" green="0.72930877189999999" blue="0.30893916189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="uSd-eq-vs3"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="oiz-2I-iJ6"/>
                     <connections>
                         <outlet property="profileImage" destination="1VH-6z-Efx" id="k3m-LW-g59"/>
                         <outlet property="profileName" destination="TJP-D7-zfw" id="7sD-im-dyh"/>
@@ -602,7 +606,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsx-Lz-l1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="1626"/>
+            <point key="canvasLocation" x="84" y="1596"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="WVY-fh-DMG">
@@ -612,6 +616,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nophotoselected.png" translatesAutoresizingMaskIntoConstraints="NO" id="O6M-hW-o2N">
+                                <rect key="frame" x="57" y="219" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGV-m7-IwB">
                                 <rect key="frame" x="68" y="97" width="279" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -658,16 +666,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b59-hH-UGs">
-                                <rect key="frame" x="87" y="241" width="240" height="222"/>
+                                <rect key="frame" x="54" y="219" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="selectImage:" destination="vc7-pt-ja1" eventType="touchUpInside" id="cfG-tJ-ulk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6M-hW-o2N">
-                                <rect key="frame" x="87" y="241" width="240" height="222"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.72930877189999999" blue="0.30893916189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cuJ-j6-nZw"/>
@@ -681,7 +685,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZb-kR-mgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055" y="1626"/>
+            <point key="canvasLocation" x="1053.6231884057972" y="1625.8928571428571"/>
         </scene>
         <!--Messaging View Controller-->
         <scene sceneID="jVH-Lz-CQO">
@@ -799,9 +803,12 @@
             <point key="canvasLocation" x="1330.4347826086957" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nophotoselected.png" width="640" height="640"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LwG-uR-rtf"/>
-        <segue reference="cjn-Rj-cH3"/>
+        <segue reference="Tfh-PC-zB0"/>
+        <segue reference="NuS-gF-Z1f"/>
         <segue reference="KvD-lI-lLX"/>
         <segue reference="KyU-vj-Z01"/>
     </inferredMetricsTieBreakers>

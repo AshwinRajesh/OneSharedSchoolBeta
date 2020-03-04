@@ -8,7 +8,6 @@
 
 import UIKit
 
-var g_username = "Bob Johnson"
 var g_image: UIImage? = nil
 
 class UserProfileViewController: UIViewController {

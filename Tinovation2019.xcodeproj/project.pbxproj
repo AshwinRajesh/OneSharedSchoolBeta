@@ -13,6 +13,7 @@
 		8B37F803240E112800BC69A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B37F802240E112800BC69A8 /* GoogleService-Info.plist */; };
 		8B37F805240F6C2000BC69A8 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37F804240F6C2000BC69A8 /* UserProfileViewController.swift */; };
 		8B37F807240F6E3900BC69A8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B37F806240F6E3900BC69A8 /* SettingsViewController.swift */; };
+		8B37F809240F835800BC69A8 /* nophotoselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B37F808240F835800BC69A8 /* nophotoselected.png */; };
 		8B3A5AC72400F10D00BEC051 /* SchoolProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A5AC62400F10D00BEC051 /* SchoolProfileViewController.swift */; };
 		8B3A5AC9240105CC00BEC051 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A5AC8240105CC00BEC051 /* LoginViewController.swift */; };
 		8B3A5ACB240108D100BEC051 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3A5ACA240108D100BEC051 /* SignupViewController.swift */; };
@@ -62,6 +63,7 @@
 		8B37F802240E112800BC69A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8B37F804240F6C2000BC69A8 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		8B37F806240F6E3900BC69A8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8B37F808240F835800BC69A8 /* nophotoselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nophotoselected.png; sourceTree = "<group>"; };
 		8B3A5AC62400F10D00BEC051 /* SchoolProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolProfileViewController.swift; sourceTree = "<group>"; };
 		8B3A5AC8240105CC00BEC051 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8B3A5ACA240108D100BEC051 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				8BB96A6423FE65490025C255 /* school.jpg */,
 				8BE960D5236DF53100D3D254 /* LaunchScreen.storyboard */,
 				8BE960D8236DF53100D3D254 /* Info.plist */,
+				8B37F808240F835800BC69A8 /* nophotoselected.png */,
 			);
 			path = Tinovation2019;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B37F809240F835800BC69A8 /* nophotoselected.png in Resources */,
 				8BE960D7236DF53100D3D254 /* LaunchScreen.storyboard in Resources */,
 				8BB96A6523FE65490025C255 /* school.jpg in Resources */,
 				8B37F803240E112800BC69A8 /* GoogleService-Info.plist in Resources */,

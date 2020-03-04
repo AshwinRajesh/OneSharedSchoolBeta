@@ -9,6 +9,7 @@
 import Firebase
 import UIKit
 
+var g_username = ""
 class SignupViewController: UIViewController {
 
     @IBOutlet weak var email: UITextField!
@@ -37,7 +38,7 @@ class SignupViewController: UIViewController {
         ref = Database.database().reference()
         
         ref.child("Users").child(name.text!).setValue(["username": name.text!])
-        
+        g_username = name.text!
         Auth.auth().createUser(withEmail: email.text!, password: password.text!, completion: {user, error in
             if (error == nil) {
                 self.performSegue(withIdentifier: "home", sender: self)

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 
 class SettingsViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -23,13 +24,18 @@ class SettingsViewController: UIViewController, UINavigationControllerDelegate, 
         // Do any additional setup after loading the view.
     }
     
+    var ref: DatabaseReference!
+    
     @IBAction func change(_ sender: UIButton) {
         if (usernameChange.text != "") {
             g_username = usernameChange.text!
         }
-        if (imageSelection.image != nil) {
+        let sampleImage = UIImage(named: "nophotoselected.png")
+        if (imageSelection.image != sampleImage) {
             g_image = imageSelection.image
         }
+        ref = Database.database().reference()
+        ref.child("Users").child(g_username).setValue(["name": g_username])
         performSegue(withIdentifier: "change", sender: nil)
     }
     
@@ -49,6 +55,7 @@ class SettingsViewController: UIViewController, UINavigationControllerDelegate, 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         imageSelection.image = selectedImage
+        dismiss(animated: true, completion: nil)
     }
     
     /*
