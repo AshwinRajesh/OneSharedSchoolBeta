@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SchoolProfileViewController: UIViewController {
+class SchoolProfileViewController: UIViewController, UINavigationControllerDelegate {
 
     @IBOutlet weak var goalProgress: UIProgressView!
     @IBOutlet weak var goalName: UILabel!
@@ -24,6 +24,10 @@ class SchoolProfileViewController: UIViewController {
         goalName.text = goal
     }
     
+    
+    @IBAction func `return`(_ sender: UIButton) {
+        self.navigationController?.dismiss(animated: true)
+    }
     /*
     // MARK: - Navigation
 

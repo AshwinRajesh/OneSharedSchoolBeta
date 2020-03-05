@@ -58,6 +58,8 @@ class SchoolMapViewController: UIViewController, MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         let index = schools.firstIndex(of: view.annotation!.title as! String)
         selectedSchool = index!
+        
+        
         performSegue(withIdentifier: "schoolProfile", sender: nil)
     }
 

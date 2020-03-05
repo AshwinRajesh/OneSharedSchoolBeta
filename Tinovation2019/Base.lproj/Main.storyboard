@@ -455,7 +455,7 @@
                     <tabBarItem key="tabBarItem" title="Schools" id="61N-fy-A6I"/>
                     <connections>
                         <outlet property="map" destination="1lC-n7-byE" id="5xA-tD-NOM"/>
-                        <segue destination="v0n-dF-xeN" kind="show" identifier="schoolProfile" id="nb6-gY-Cpo"/>
+                        <segue destination="zva-dh-Ard" kind="show" identifier="schoolProfile" id="nb6-gY-Cpo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiY-5N-r7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -516,13 +516,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="HJ2-h4-cbp" kind="show" id="LwG-uR-rtf"/>
+                                    <action selector="return:" destination="v0n-dF-xeN" eventType="touchUpInside" id="ybI-Ye-2aV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.72930877189999999" blue="0.30893916189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="tqP-jr-zbk"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2x0-GE-5SV">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="pyW-cY-yie"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="goalName" destination="vKI-eQ-hZP" id="2zN-J3-08d"/>
                         <outlet property="goalProgress" destination="ZsG-zp-j1u" id="m4F-tM-ksk"/>
@@ -532,7 +535,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ye-Vg-KTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="950.72463768115949" y="843.75"/>
+            <point key="canvasLocation" x="1860.8695652173915" y="843.75"/>
         </scene>
         <!--Profile-->
         <scene sceneID="vky-7h-INK">
@@ -591,7 +594,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vc7-pt-ja1" kind="show" id="qoj-tm-1JN"/>
+                                    <segue destination="nk1-2r-llj" kind="show" id="qoj-tm-1JN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -651,7 +654,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RCE-Lh-vhM" kind="show" id="c8L-a2-PP2"/>
+                                    <action selector="cancel:" destination="vc7-pt-ja1" eventType="touchUpInside" id="elT-dC-i4I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VN2-d1-h0l">
@@ -676,16 +679,16 @@
                         <color key="backgroundColor" red="1" green="0.72930877189999999" blue="0.30893916189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cuJ-j6-nZw"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6AY-rB-nwj"/>
                     <connections>
                         <outlet property="imageSelection" destination="O6M-hW-o2N" id="W6f-kT-nhp"/>
                         <outlet property="passwordChange" destination="rXP-Zq-2s2" id="xrG-wL-tl2"/>
                         <outlet property="usernameChange" destination="Y42-Ne-mL8" id="Tca-aS-ITf"/>
-                        <segue destination="RCE-Lh-vhM" kind="show" identifier="change" id="cjn-Rj-cH3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZb-kR-mgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053.6231884057972" y="1625.8928571428571"/>
+            <point key="canvasLocation" x="1963.7681159420292" y="1625.8928571428571"/>
         </scene>
         <!--Messaging View Controller-->
         <scene sceneID="jVH-Lz-CQO">
@@ -802,13 +805,47 @@
             </objects>
             <point key="canvasLocation" x="1330.4347826086957" y="118.52678571428571"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lHe-pt-fQc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="zva-dh-Ard" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="nmd-jJ-JrB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="v0n-dF-xeN" kind="relationship" relationship="rootViewController" id="3GG-uC-OJe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uD8-Dr-j9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.72463768115949" y="843.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bg7-YA-15s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="nk1-2r-llj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n1d-dk-TbJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vc7-pt-ja1" kind="relationship" relationship="rootViewController" id="wFd-j6-M9x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5d-C2-ZVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053.6231884057972" y="1625.8928571428571"/>
+        </scene>
     </scenes>
     <resources>
         <image name="nophotoselected.png" width="640" height="640"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tfh-PC-zB0"/>
-        <segue reference="NuS-gF-Z1f"/>
         <segue reference="KvD-lI-lLX"/>
         <segue reference="KyU-vj-Z01"/>
     </inferredMetricsTieBreakers>

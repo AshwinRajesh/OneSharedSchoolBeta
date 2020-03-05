@@ -36,7 +36,10 @@ class SettingsViewController: UIViewController, UINavigationControllerDelegate, 
         }
         ref = Database.database().reference()
         ref.child("Users").child(g_username).setValue(["name": g_username])
-        performSegue(withIdentifier: "change", sender: nil)
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func cancel(_ sender: UIButton) {
+        self.navigationController?.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func selectImage(_ sender: UIButton) {
