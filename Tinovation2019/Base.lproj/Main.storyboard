@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOe-zf-QHY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2030" y="595"/>
+            <point key="canvasLocation" x="-2570" y="776"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="GBk-MF-VTA">
@@ -161,7 +161,72 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s8U-Ha-Khw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1168" y="413"/>
+            <point key="canvasLocation" x="-1493" y="413"/>
+        </scene>
+        <!--Schools-->
+        <scene sceneID="UVK-DM-RH2">
+            <objects>
+                <viewController id="Q81-eF-SLO" customClass="SchoolsListViewController" customModule="Tinovation2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EyZ-7k-hWk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FVq-WY-0ik">
+                                <rect key="frame" x="20" y="67" width="374" height="639"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="school" rowHeight="79" id="bp3-Ey-FCn" customClass="SchoolTableViewCell" customModule="Tinovation2019" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bp3-Ey-FCn" id="VlR-fY-40l">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="78.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQN-Jw-xGc">
+                                                    <rect key="frame" x="20" y="26" width="334" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="iQN-Jw-xGc" firstAttribute="top" secondItem="VlR-fY-40l" secondAttribute="topMargin" constant="15" id="Ggn-Ts-CL3"/>
+                                                <constraint firstItem="iQN-Jw-xGc" firstAttribute="leading" secondItem="VlR-fY-40l" secondAttribute="leadingMargin" id="R70-lf-lbS"/>
+                                                <constraint firstItem="iQN-Jw-xGc" firstAttribute="trailing" secondItem="VlR-fY-40l" secondAttribute="trailingMargin" id="i9R-KR-2sm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="iQN-Jw-xGc" secondAttribute="bottom" constant="15" id="oHn-zY-qdq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="schoolLabel" destination="iQN-Jw-xGc" id="VbG-jE-BdT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gO-pe-uAX">
+                                <rect key="frame" x="62" y="714" width="291" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="29"/>
+                                <state key="normal" title="Find Schools on Map &gt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="HJ2-h4-cbp" kind="show" id="NtX-bN-NQd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.72930877189999999" blue="0.30893916189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Khe-62-UPi"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Schools" id="17R-LQ-icV"/>
+                    <connections>
+                        <outlet property="schoolList" destination="FVq-WY-0ik" id="73s-C3-V95"/>
+                        <segue destination="zva-dh-Ard" kind="show" identifier="showSchool" id="YUF-HO-Sk3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyv-CU-PM1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-504.34782608695656" y="711.83035714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -205,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-354" y="78"/>
+            <point key="canvasLocation" x="-749" y="-22"/>
         </scene>
         <!--Contacts View Controller-->
         <scene sceneID="6d4-VL-xG9">
@@ -275,7 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcS-90-sPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="500.00000000000006" y="118.52678571428571"/>
+            <point key="canvasLocation" x="335" y="-22"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="9vh-Sj-kAI">
@@ -333,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDf-T4-czT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-630" y="2148"/>
+            <point key="canvasLocation" x="-748" y="2466"/>
         </scene>
         <!--Donate-->
         <scene sceneID="3N7-rz-gcs">
@@ -405,7 +470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3uc-ua-lfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1168" y="1387"/>
+            <point key="canvasLocation" x="-922" y="1580"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yXm-8M-skP">
@@ -422,7 +487,7 @@
                         <segue destination="Sgc-bU-OWb" kind="relationship" relationship="viewControllers" id="cDr-7h-12K"/>
                         <segue destination="ML2-ex-dn1" kind="relationship" relationship="viewControllers" id="OnY-RH-o7n"/>
                         <segue destination="RCE-Lh-vhM" kind="relationship" relationship="viewControllers" id="Tfh-PC-zB0"/>
-                        <segue destination="HJ2-h4-cbp" kind="relationship" relationship="viewControllers" id="NuS-gF-Z1f"/>
+                        <segue destination="Q81-eF-SLO" kind="relationship" relationship="viewControllers" id="g5W-9L-kvV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAb-S2-H6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -460,7 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QiY-5N-r7c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4.3478260869565224" y="844.41964285714278"/>
+            <point key="canvasLocation" x="268" y="1302"/>
         </scene>
         <!--School Profile View Controller-->
         <scene sceneID="Zpk-po-KXJ">
@@ -535,7 +600,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ye-Vg-KTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860.8695652173915" y="843.75"/>
+            <point key="canvasLocation" x="2067" y="868"/>
         </scene>
         <!--Profile-->
         <scene sceneID="vky-7h-INK">
@@ -609,7 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vsx-Lz-l1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="1596"/>
+            <point key="canvasLocation" x="-62" y="1984"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="WVY-fh-DMG">
@@ -688,7 +753,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZb-kR-mgb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1963.7681159420292" y="1625.8928571428571"/>
+            <point key="canvasLocation" x="1939" y="2140"/>
         </scene>
         <!--Messaging View Controller-->
         <scene sceneID="jVH-Lz-CQO">
@@ -821,7 +886,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uD8-Dr-j9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="950.72463768115949" y="843.75"/>
+            <point key="canvasLocation" x="1128" y="1205"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bg7-YA-15s">
@@ -839,14 +904,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5d-C2-ZVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053.6231884057972" y="1625.8928571428571"/>
+            <point key="canvasLocation" x="896" y="2053"/>
         </scene>
     </scenes>
     <resources>
         <image name="nophotoselected.png" width="640" height="640"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KvD-lI-lLX"/>
+        <segue reference="YUF-HO-Sk3"/>
+        <segue reference="caa-kc-Lee"/>
         <segue reference="KyU-vj-Z01"/>
     </inferredMetricsTieBreakers>
 </document>

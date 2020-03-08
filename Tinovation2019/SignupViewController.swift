@@ -39,6 +39,7 @@ class SignupViewController: UIViewController {
         
         ref.child("Users").child(name.text!).setValue(["username": name.text!])
         g_username = name.text!
+        g_image = UIImage(named: "nophotoselected.png")
         Auth.auth().createUser(withEmail: email.text!, password: password.text!, completion: {user, error in
             if (error == nil) {
                 self.performSegue(withIdentifier: "home", sender: self)

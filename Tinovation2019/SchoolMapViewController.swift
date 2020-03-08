@@ -9,8 +9,8 @@
 import MapKit
 import UIKit
 
-var selectedSchool: Int = 0
-var schools: [String] = []
+//var selectedSchool: Int = 0
+//var schools: [String] = ["Test School 1"]
 var locations: [CLLocationCoordinate2D] = []
 var images: [UIImage] = []
 var goals: [String: Float] = [:]
@@ -23,17 +23,16 @@ class SchoolMapViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
         map.delegate = self
         // Do any additional setup after loading the view.
-        schools.append("Test School 1")
         locations.append(CLLocationCoordinate2D(latitude: -53.0, longitude: 10.0))
         goals.updateValue(0.34, forKey: "New Library!")
-        for school in schools {
+        /*for school in schools {
             let index = schools.firstIndex(of: school)
             let annotation = MKPointAnnotation()
             annotation.title = school
             annotation.coordinate = locations[index!]
             //annotation.image = "I love you!"
             map.addAnnotation(annotation)
-        }
+        }*/
     }
     
     /*func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -56,11 +55,11 @@ class SchoolMapViewController: UIViewController, MKMapViewDelegate {
     }*/
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        let index = schools.firstIndex(of: view.annotation!.title as! String)
+        /*let index = schools.firstIndex(of: view.annotation!.title as! String)
         selectedSchool = index!
         
         
-        performSegue(withIdentifier: "schoolProfile", sender: nil)
+        performSegue(withIdentifier: "schoolProfile", sender: nil)*/
     }
 
     /*

@@ -18,10 +18,12 @@ class SchoolProfileViewController: UIViewController, UINavigationControllerDeleg
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        schoolName.text = schools[selectedSchool]
-        let goal = [String](goals.keys)[selectedSchool]
-        goalProgress.setProgress(goals[goal]!, animated: false)
-        goalName.text = goal
+        schoolName.text = selectedSchool["Name"] as! String
+        let goalDescription = "Paint and Textbooks"
+        let progress = selectedSchool["Raised"] as! Int
+        let goal = selectedSchool["Funding Goal"] as! Int
+        goalProgress.setProgress(Float(progress) / Float(goal), animated: false)
+        goalName.text = goalDescription
     }
     
     
