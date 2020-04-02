@@ -23,6 +23,11 @@
 		8B41F87F2371288E00F383DB /* OtherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B41F87E2371288E00F383DB /* OtherCollectionViewCell.swift */; };
 		8B49703423A0A1A300F5C6FD /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49703323A0A1A300F5C6FD /* ContactsViewController.swift */; };
 		8B49703623A0A23C00F5C6FD /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49703523A0A23C00F5C6FD /* ContactTableViewCell.swift */; };
+		8B548E09243438D700E5C35C /* DonationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B548E08243438D700E5C35C /* DonationsListViewController.swift */; };
+		8B548E0B2434391700E5C35C /* DonationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B548E0A2434391700E5C35C /* DonationTableViewCell.swift */; };
+		8B548E0D2434FD5B00E5C35C /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B548E0C2434FD5B00E5C35C /* SearchBarViewController.swift */; };
+		8B548E0F2435024300E5C35C /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B548E0E2435024300E5C35C /* SuggestionTableViewCell.swift */; };
+		8B548E11243579AD00E5C35C /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B548E10243579AD00E5C35C /* DonationViewController.swift */; };
 		8BB96A6323FE55E80025C255 /* SchoolMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96A6223FE55E70025C255 /* SchoolMapViewController.swift */; };
 		8BB96A6523FE65490025C255 /* school.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8BB96A6423FE65490025C255 /* school.jpg */; };
 		8BC459B32414D36900583E73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BC459B22414D36900583E73 /* GoogleService-Info.plist */; };
@@ -75,6 +80,11 @@
 		8B41F87E2371288E00F383DB /* OtherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OtherCollectionViewCell.swift; path = /Users/ashwinr/Downloads/Tinovation2019/Tinovation2019/OtherCollectionViewCell.swift; sourceTree = "<absolute>"; };
 		8B49703323A0A1A300F5C6FD /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactsViewController.swift; path = /Users/ashwinr/Downloads/Tinovation2019/Tinovation2019/ContactsViewController.swift; sourceTree = "<absolute>"; };
 		8B49703523A0A23C00F5C6FD /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		8B548E08243438D700E5C35C /* DonationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsListViewController.swift; sourceTree = "<group>"; };
+		8B548E0A2434391700E5C35C /* DonationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationTableViewCell.swift; sourceTree = "<group>"; };
+		8B548E0C2434FD5B00E5C35C /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
+		8B548E0E2435024300E5C35C /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
+		8B548E10243579AD00E5C35C /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		8BB96A6223FE55E70025C255 /* SchoolMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolMapViewController.swift; sourceTree = "<group>"; };
 		8BB96A6423FE65490025C255 /* school.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = school.jpg; sourceTree = "<group>"; };
 		8BC459B22414D36900583E73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -161,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				8B37F7FC240D82D200BC69A8 /* DonateViewController.swift */,
+				8B548E10243579AD00E5C35C /* DonationViewController.swift */,
 				8B49703323A0A1A300F5C6FD /* ContactsViewController.swift */,
 				8B49703523A0A23C00F5C6FD /* ContactTableViewCell.swift */,
 				8BE960CC236DF52A00D3D254 /* AppDelegate.swift */,
@@ -170,6 +181,10 @@
 				8B3A5ACA240108D100BEC051 /* SignupViewController.swift */,
 				8B37F804240F6C2000BC69A8 /* UserProfileViewController.swift */,
 				8B37F806240F6E3900BC69A8 /* SettingsViewController.swift */,
+				8B548E08243438D700E5C35C /* DonationsListViewController.swift */,
+				8B548E0C2434FD5B00E5C35C /* SearchBarViewController.swift */,
+				8B548E0E2435024300E5C35C /* SuggestionTableViewCell.swift */,
+				8B548E0A2434391700E5C35C /* DonationTableViewCell.swift */,
 				8B37F80A2410D6AC00BC69A8 /* SchoolsListViewController.swift */,
 				8B37F80C2410D75800BC69A8 /* SchoolTableViewCell.swift */,
 				8B41F87C2371287600F383DB /* UserCollectionViewCell.swift */,
@@ -431,14 +446,19 @@
 				8B3A5ACB240108D100BEC051 /* SignupViewController.swift in Sources */,
 				8B37F7FF240DEB3F00BC69A8 /* DonateTableViewCell.swift in Sources */,
 				8B3A5AC72400F10D00BEC051 /* SchoolProfileViewController.swift in Sources */,
+				8B548E11243579AD00E5C35C /* DonationViewController.swift in Sources */,
+				8B548E0D2434FD5B00E5C35C /* SearchBarViewController.swift in Sources */,
+				8B548E09243438D700E5C35C /* DonationsListViewController.swift in Sources */,
 				8B41F87F2371288E00F383DB /* OtherCollectionViewCell.swift in Sources */,
 				8BE960CD236DF52A00D3D254 /* AppDelegate.swift in Sources */,
 				8B49703623A0A23C00F5C6FD /* ContactTableViewCell.swift in Sources */,
 				8B37F807240F6E3900BC69A8 /* SettingsViewController.swift in Sources */,
 				8B37F7FD240D82D200BC69A8 /* DonateViewController.swift in Sources */,
 				8B37F80D2410D75800BC69A8 /* SchoolTableViewCell.swift in Sources */,
+				8B548E0B2434391700E5C35C /* DonationTableViewCell.swift in Sources */,
 				8B37F805240F6C2000BC69A8 /* UserProfileViewController.swift in Sources */,
 				8BB96A6323FE55E80025C255 /* SchoolMapViewController.swift in Sources */,
+				8B548E0F2435024300E5C35C /* SuggestionTableViewCell.swift in Sources */,
 				8B41F8732371272D00F383DB /* MessagingViewController.swift in Sources */,
 				8B3A5AC9240105CC00BEC051 /* LoginViewController.swift in Sources */,
 				8B49703423A0A1A300F5C6FD /* ContactsViewController.swift in Sources */,

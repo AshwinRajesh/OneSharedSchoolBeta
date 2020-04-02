@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import Firebase
 
-var name = ""
 
 class ContactsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var contacts = ["Alice", "Bob", "David", "Christine"]
+    var contacts: [String] = []
+    
+    var ref: DatabaseReference!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contacts.count
@@ -30,11 +32,24 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ref = Database.database().reference()
         // Do any additional setup after loading the view.
-        
-        contactsTable.dataSource = self
-        contactsTable.delegate = self
+        ref.child("Messages").observe(.value, with: {(data) in
+            for child in data.children.allObjects as! [DataSnapshot] {
+                let dict = child.value as! NSDictionary
+                let userOne = dict["userOne"] as! String
+                let userTwo = dict["userTwo"] as! String
+                if (userOne == g_username) {
+                    self.contacts.append(userTwo)
+                }
+                if (userTwo == g_username) {
+                    self.contacts.append(userOne)
+                }
+            }
+            self.contactsTable.dataSource = self
+            self.contactsTable.delegate = self
+            
+        })
         
         //language = .en
     }
@@ -42,7 +57,7 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let index = indexPath.row
-        name = contacts[index]
+        selectedUser = contacts[index]
         performSegue(withIdentifier: "messages", sender: nil)
         
     }

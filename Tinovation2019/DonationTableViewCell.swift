@@ -1,18 +1,18 @@
 //
-//  SchoolTableViewCell.swift
+//  DonationTableViewCell.swift
 //  Tinovation2019
 //
-//  Created by Ashwin Rajesh on 3/4/20.
+//  Created by Ashwin Rajesh on 3/31/20.
 //  Copyright © 2020 Ashwin Rajesh. All rights reserved.
 //
 
 import UIKit
 
-class SchoolTableViewCell: UITableViewCell {
+class DonationTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var schoolLabel: UILabel!
-    @IBOutlet weak var schoolImage: UIImageView!
-    @IBOutlet weak var schoolDescription: UITextView!
+    @IBOutlet weak var donationAmount: UILabel!
+    @IBOutlet weak var donationTitle: UILabel!
+    @IBOutlet weak var donationSchool: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

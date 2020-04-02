@@ -9,9 +9,13 @@
 import Firebase
 import UIKit
 
+var selectedUser = ""
+
 //var toggle = "other"
 
 class MessagingViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    var ref: DatabaseReference!
     
     @IBOutlet weak var contactName: UILabel!
     
@@ -27,7 +31,7 @@ class MessagingViewController: UIViewController, UICollectionViewDataSource, UIC
         
         let sender = users[indexPath.row]
 
-        if (sender == "Other") {
+        if (sender != g_username) {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OtherMessage", for: indexPath) as! OtherCollectionViewCell
             let message = messages[indexPath.row]
             cell.textLabel.text = message
@@ -81,7 +85,35 @@ class MessagingViewController: UIViewController, UICollectionViewDataSource, UIC
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        ref = Database.database().reference()
+        
+        contactName.text = selectedUser
+        ref.child("Messages").observe(.value, with: {(data) in
+            for child in data.children.allObjects as! [DataSnapshot] {
+                let dict = child.value as! NSDictionary
+                let people = dict["participants"] as! [String]
+                let userTwo = dict["userTwo"] as! String
+                let userOne = dict["userOne"] as! String
+                if ((userOne == selectedUser && userTwo == g_username) || (userTwo == selectedUser && userOne == g_username)) {
+                    let chat = dict["chat"] as! [String]
+                    if (chat.count > 5) {
+                        self.messages = Array(chat.suffix(5))
+                        self.users = Array(people.suffix(5))
+                    } else {
+                        self.users = people
+                        self.messages = chat
+                    }
+                    print(self.messages)
+                    print(self.users)
+                    self.messageView.delegate = self
+                    self.messageView.dataSource = self
+                    
+                }
+            }
+            
+        })
+        
         /*
         let options = TranslatorOptions(sourceLanguage: .en, targetLanguage: language)
         let translator = NaturalLanguage.naturalLanguage().translator(options: options)
@@ -110,17 +142,50 @@ class MessagingViewController: UIViewController, UICollectionViewDataSource, UIC
             // Translation succeeded.
         }
        
-        contactName.text = name
+
         // Do any additional setup after loading the view.
        */
     }
     
     @IBAction func sendMessage(_ sender: UIButton) {
+        print("Test")
+        ref = Database.database().reference()
         
-        messages.append(message.text!)
-        users.append("User")
-        message.text = ""
-        messageView.reloadData()
+        ref.child("Messages").observeSingleEvent(of: .value, with: {(data) in
+            var new = true
+            let snapshots = data.children.allObjects as! [DataSnapshot]
+            print(snapshots.count)
+            for (i, child) in snapshots.enumerated() {
+                print(i)
+                let dict = child.value as! NSDictionary
+                var people = dict["participants"] as! [String]
+                let userTwo = dict["userTwo"] as! String
+                let userOne = dict["userOne"] as! String
+                if ((userOne == selectedUser && userTwo == g_username) || (userTwo == selectedUser && userOne == g_username)) {
+                    new = false
+                    var chat = dict["chat"] as! [String]
+                    let id = child.key
+                    print(id)
+                    chat.append(self.message.text!)
+                    people.append(g_username)
+                self.ref.child("Messages").child(id).setValue(["userOne": userOne, "userTwo": userTwo, "participants": people, "chat": chat])
+                 self.messages.append(self.message.text!)
+                    self.users.append(g_username)
+                    
+                }
+            }
+            if (new == true) {
+               let chat = [self.message.text!]
+               let people = [g_username]
+                self.messages.append(self.message.text!)
+                self.users.append(g_username)
+                self.ref.child("Messages").childByAutoId().setValue(["userOne": g_username, "userTwo": selectedUser, "participants": people, "chat": chat])
+            }
+            
+            self.messageView.reloadData()
+            
+        })
+        
     }
     
     /*
@@ -133,4 +198,7 @@ class MessagingViewController: UIViewController, UICollectionViewDataSource, UIC
     }
     */
 
+    @IBAction func back(_ sender: UIButton) {
+        self.navigationController?.dismiss(animated: true)
+    }
 }

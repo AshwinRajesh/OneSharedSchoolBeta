@@ -14,16 +14,31 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var login: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    var ref: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func signin(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: login.text!, password: password.text!, completion: {user, error in
             if error == nil {
-                self.performSegue(withIdentifier: "home", sender: self)
+                self.ref = Database.database().reference()
+                self.ref.child("Users").observe(.value, with: {(data) in
+                    for child in data.children.allObjects as! [DataSnapshot] {
+                        let dict = child.value as! NSDictionary
+                        let email = dict["email"] as! String
+                        if (email == self.login.text!) {
+                            g_username = dict["username"] as! String
+                            self.performSegue(withIdentifier: "home", sender: self)
+                        }
+                    }
+                    
+                })
+                
             }
         })
     }

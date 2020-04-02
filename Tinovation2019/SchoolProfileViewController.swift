@@ -14,6 +14,7 @@ class SchoolProfileViewController: UIViewController, UINavigationControllerDeleg
     @IBOutlet weak var schoolImage: UIImageView!
     @IBOutlet weak var schoolName: UILabel!
 
+    @IBOutlet weak var schoolDescription: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,8 +23,11 @@ class SchoolProfileViewController: UIViewController, UINavigationControllerDeleg
         let goalDescription = "Paint and Textbooks"
         let progress = selectedSchool["Raised"] as! Int
         let goal = selectedSchool["Funding Goal"] as! Int
+        
         goalProgress.setProgress(Float(progress) / Float(goal), animated: false)
         goalName.text = goalDescription
+        schoolDescription.text = selectedSchool["Description"] as! String
+        
     }
     
     

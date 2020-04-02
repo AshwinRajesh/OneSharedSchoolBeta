@@ -1,19 +1,16 @@
 //
-//  SchoolTableViewCell.swift
+//  SuggestionTableViewCell.swift
 //  Tinovation2019
 //
-//  Created by Ashwin Rajesh on 3/4/20.
+//  Created by Ashwin Rajesh on 4/1/20.
 //  Copyright © 2020 Ashwin Rajesh. All rights reserved.
 //
 
 import UIKit
 
-class SchoolTableViewCell: UITableViewCell {
+class SuggestionTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var schoolLabel: UILabel!
-    @IBOutlet weak var schoolImage: UIImageView!
-    @IBOutlet weak var schoolDescription: UITextView!
-    
+    @IBOutlet weak var suggestionName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

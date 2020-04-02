@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import NotificationCenter
 
 var schools = [NSDictionary]()
 var selectedSchool = NSDictionary()
@@ -23,6 +24,10 @@ class SchoolsListViewController: UIViewController, UITableViewDataSource, UITabl
         let cell = tableView.dequeueReusableCell(withIdentifier: "school") as! SchoolTableViewCell
         
         cell.schoolLabel.text = schools[indexPath.row]["Name"] as! String
+        let uri = schools[indexPath.row]["ImageURI"] as! String
+        cell.schoolImage.image = UIImage(named: "nophotoselected.png")
+        //cell.schoolImage.image = UIImage(imageLiteralResourceName: uri)
+        cell.schoolDescription.text = schools[indexPath.row]["Description"] as! String
         
         return cell
         
@@ -34,13 +39,18 @@ class SchoolsListViewController: UIViewController, UITableViewDataSource, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
-        
-    ref.child("Schools").child("1").observe(.value, with: {(data) in
-            let school = data.value as! NSDictionary
-            schools.append(school)
+
+        ref.child("Schools").observeSingleEvent(of: .value, with: {(data) in
+            for child in data.children.allObjects as! [DataSnapshot] {
+                let school = child.value as! NSDictionary
+                schools.append(school)
+            }
+
             self.schoolList.dataSource = self
             self.schoolList.delegate = self
+            
         })
+      
         
         // Do any additional setup after loading the view.
     }
